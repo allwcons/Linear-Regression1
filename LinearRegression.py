@@ -13,7 +13,7 @@ class  LinearRegression:
     return self.m * x + self.b
 
   def predict(self,x_test):
-    return list(map(self._createLine,x_test))
+    return list(map(self.__createLine,x_test))
 
   def calculate(self):
     xmean = np.mean(self.x_train)
